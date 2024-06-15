@@ -1,3 +1,89 @@
-h1{
-    color: brown;
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/*=============== BASE ===============*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body{
+    font-family: "Inter", sans-serif;
+    /* background-color: blueviolet; */
 }
+
+p {
+    line-height: 130%;
+  }
+  
+ul {
+    list-style: none;
+  }
+  
+a {
+    text-decoration: none;
+  }
+
+.main {
+    overflow: hidden;
+  }
+
+
+  /*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+    max-width: 1120px;
+    margin-inline: 1.5rem;
+  }
+
+  /*=============== HEADER & NAV ===============*/
+
+  .header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color:white;
+    z-index: 2;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px;
+  }
+
+  .nav{
+    position: relative;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .nav_list{
+    display: flex;
+  }
+
+  /* .nav_toggle,
+  .nav_close{
+    font-size: 20px;
+    cursor:pointer;
+  } */
+
+  /* Navigation for mobile */
+
+ 
+  /* For large devices */
+
+  @media screen and (max-width: 992px) {
+    body {
+      background-color: blue;
+    }
+  }
+
+
+  @media screen and (max-width: 600px) {
+    body {
+      background-color: olive;
+    }
+  }
