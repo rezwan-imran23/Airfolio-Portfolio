@@ -101,7 +101,7 @@ a {
   background-color: #F6F8FF;
   background-image: url(images/Vector.png);
   background-repeat: no-repeat;
-  background-position: 85% 30%;
+  background-position: 81% 70%;
 }
 
 .hire-btn{border-radius: 5px;
@@ -128,7 +128,8 @@ a {
 .hero{
   display: flex;
   align-items: center;
-  justify-content:space-around;
+  justify-content:space-between;
+  padding-top: 130px;
 }
 
 .hero-content{
@@ -136,8 +137,7 @@ a {
 
 }
 .hero-img{
- 
-  
+margin-right: 100px;
 }
 .hero-content h1{
   font-size: 56px;
