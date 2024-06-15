@@ -6,17 +6,17 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: "Inter", sans-serif;
   }
 
 html {
     scroll-behavior: smooth;
   }
 
-body{
-    font-family: "Inter", sans-serif;
-    /* background-color: blueviolet; */
-}
-
+  /* main{
+    max-width: 1140px;
+    margin: 0 auto;
+} */
 p {
     line-height: 130%;
   }
@@ -36,54 +36,116 @@ a {
 
   /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
-    max-width: 1120px;
-    margin-inline: 1.5rem;
+    max-width: 1420px;
+    margin: 0 auto;
   }
 
   /*=============== HEADER & NAV ===============*/
 
   .header{
-    position: fixed;
+    /* position: fixed; */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px;
     width: 100%;
     top: 0;
     left: 0;
+    height: 100px;
     background-color:white;
-    z-index: 2;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px;
+    z-index:100;
   }
 
   .nav{
-    position: relative;
-    height: auto;
+    /* position: relative; */
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
   }
 
   .nav_list{
     display: flex;
+    align-items: center;
   }
 
-  /* .nav_toggle,
-  .nav_close{
-    font-size: 20px;
-    cursor:pointer;
-  } */
+  .nav_list li{
+    height: 100px;
+    padding: 40px 15px;
+  }
 
-  /* Navigation for mobile */
+  .nav_list a{
+    height: 100%;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+  }
 
+
+  .nav_btn{
+    border-radius: 5px;
+    background: #078D84;
+    border:0;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 16px 24px;
+    color: white;
+  }
+
+  .nav_btn:hover{
+    background-color: #057f77;
+    color: white;
+    transition: all 0.5s;
+  }
+
+
+
+.hero-section{
+  background-color: #F6F8FF;
+  background-image: url(images/Vector.png);
+  background-repeat: no-repeat;
+  background-position: 85% 30%;
+}
+
+.hire-btn{border-radius: 5px;
+  background: #078D84;
+  border:0;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 16px 24px;
+  color: white;
+  margin-right: 10px;
+}
+
+#portfolio-btn{
+  border-radius: 5px;
+    background-color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 15px 30px;
+    color: #078D84;
+    border: 1px solid #078D84;
+    cursor: pointer;
+}
+
+.hero{
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+}
+
+.hero-content{
+  max-width: 50%;
+
+}
+.hero-img{
  
-  /* For large devices */
+  
+}
+.hero-content h1{
+  font-size: 56px;
+  font-weight: 500;
+  line-height: 60px;
+}
 
-  @media screen and (max-width: 992px) {
-    body {
-      background-color: blue;
-    }
-  }
-
-
-  @media screen and (max-width: 600px) {
-    body {
-      background-color: olive;
-    }
-  }
+.hero-content p,h1{
+  margin-bottom: 25px;
+}
+  
