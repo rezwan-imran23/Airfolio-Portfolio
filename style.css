@@ -3,108 +3,30 @@
 
 /*=============== BASE ===============*/
 * {
-    box-sizing: border-box;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
     font-family: "Inter", sans-serif;
   }
 
-html {
-    scroll-behavior: smooth;
+  :root{
+    --white:#fff;
+    --black:#000;
+    --green:#078D84;
+    --dark: #1C1C57;
+    --rhino:#3E3E70;
+    --foundation-blue:#F6F8FF;
+    --sky-blue:#255BF9;
   }
 
-  /* main{
-    max-width: 1140px;
-    margin: 0 auto;
-} */
-p {
-    line-height: 130%;
-  }
-  
-ul {
-    list-style: none;
-  }
-  
-a {
-    text-decoration: none;
-  }
+html  {scroll-behavior: smooth;}
+p     {line-height: 130%;color:#3E3E70}
+ul    {list-style: none;}
+a     {text-decoration: none;}
+.main {overflow: hidden;}
 
-.main {
-    overflow: hidden;
-  }
-
-
-  /*=============== REUSABLE CSS CLASSES ===============*/
-.container {
-    max-width: 1420px;
-    margin: 0 auto;
-  }
-
-  /*=============== HEADER & NAV ===============*/
-
-  .header{
-    /* position: fixed; */
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px;
-    width: 100%;
-    top: 0;
-    left: 0;
-    height: 100px;
-    background-color:white;
-    z-index:100;
-  }
-
-  .nav{
-    /* position: relative; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-  }
-
-  .nav_list{
-    display: flex;
-    align-items: center;
-  }
-
-  .nav_list li{
-    height: 100px;
-    padding: 40px 15px;
-  }
-
-  .nav_list a{
-    height: 100%;
-    padding: 0 10px;
-    display: flex;
-    align-items: center;
-  }
-
-
-  .nav_btn{
-    border-radius: 5px;
-    background: #078D84;
-    border:0;
-    font-size: 16px;
-    font-weight: 400;
-    padding: 16px 24px;
-    color: white;
-  }
-
-  .nav_btn:hover{
-    background-color: #057f77;
-    color: white;
-    transition: all 0.5s;
-  }
-
-
-
-.hero-section{
-  background-color: #F6F8FF;
-  background-image: url(images/Vector.png);
-  background-repeat: no-repeat;
-  background-position: 81% 70%;
-}
-
-.hire-btn{border-radius: 5px;
+.primary-btn{
+  border-radius: 5px;
   background: #078D84;
   border:0;
   font-size: 16px;
@@ -114,8 +36,110 @@ a {
   margin-right: 10px;
 }
 
-#portfolio-btn{
+.secondary-btn{
   border-radius: 5px;
+  background: #ffffff;
+  border:0;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 16px 24px;
+  color:var(--black);
+  margin-right: 10px;
+}
+
+
+  /*=============== REUSABLE CSS CLASSES ===============*/
+
+
+.section{
+  padding: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+    max-width: 78%;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+.row-container,.column-container{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.row-container{
+  gap:4rem;
+}
+
+.column-container{
+  flex-direction: column;
+  gap: 3rem;
+  text-align: center;
+}
+
+
+  /*=============== HEADER & NAV ===============*/
+
+.header{
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 90px;
+}
+.nav_list{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--black);
+}
+  
+.ri-menu-line{
+  margin-right: auto;
+  font-size: 30px;
+}
+.hamburger{
+  display: none;
+}
+
+
+ /*=============== HERO ===============*/
+
+.hero-section{
+  background-color: #F6F8FF;
+  background-image: url(images/Vector.png);
+  background-repeat: no-repeat;
+  background-position: 81% 70%;
+}
+
+.primary-btn{
+  border-radius: 5px;
+  background: #078D84;
+  border:0;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 16px 24px;
+  color: white;
+  margin-right: 10px;
+}
+
+.primary-btn:hover{
+  background-color: #027870;
+  color: white;
+  transition: all 0.5s;
+}
+
+
+#portfolio-btn{
+    border-radius: 5px;
     background-color: #ffffff;
     font-size: 16px;
     font-weight: 400;
@@ -125,27 +149,123 @@ a {
     cursor: pointer;
 }
 
+#portfolio-btn:hover{
+  background-color:#027870;
+  color: #ffffff;
+  border: none;
+  transition: all 0.6s;
+}
+
 .hero{
   display: flex;
-  align-items: center;
-  justify-content:space-between;
+  /* align-items: center; */
+  /* justify-content:space-between; */
   padding-top: 130px;
 }
 
 .hero-content{
   max-width: 50%;
-
 }
 .hero-img{
-margin-right: 100px;
+  /* background-color: #3E3E70; */
+  margin-left: 15rem;
+/* display: flex; */
 }
+
+.hero-img img{ width: 100%;}
+
 .hero-content h1{
   font-size: 56px;
   font-weight: 500;
   line-height: 60px;
 }
 
+.hero-content p{
+  font-size: 18px;
+}
+
 .hero-content p,h1{
   margin-bottom: 25px;
 }
-  
+ /*=============== BRANDS ===============*/
+
+ .brands-section{
+  background-color: var(--rhino);
+  padding: 4rem 0;
+ }
+
+ .brand-content-left{
+  max-width: 20%;
+}
+
+.brand-content-left h6{
+  color: var(--white);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.5rem;
+}
+
+.brand-content-right img{
+   align-items: center;
+   padding: 10px;
+}
+
+.brand-content-right{
+  display: flex;
+  align-items: center;
+}
+
+
+ /*=============== SERVICE ===============*/
+
+ .service-section{
+   background-color: var(--foundationblue);
+   padding: 5rem 0;
+ }
+
+ .service-content-left,.service-content-right{
+  max-width: 50%;
+ }
+
+ .service h1{
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 60px;
+ }
+
+ /*=============== SERVICES CARD ===============*/
+
+ .service-card-container{
+  display: flex;
+  justify-content:space-between;
+  gap:4rem;
+ }
+ .service-cards{
+ display: flex;
+ align-items: center;
+ }
+
+.card{
+background-color: white;
+padding: 2.2rem 1.5rem ;
+box-shadow:  rgba(0, 0, 0, 0.24) 0px 1px 3px;
+border-radius: 1rem;
+text-align: left;
+ }
+
+.card h4{
+  font-size:24px;
+  font-weight: 500;
+  margin: 20px 0;
+}
+.card img{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 3px;
+  border-radius: 1rem;
+  padding: 1.2rem;
+}
+
+.action{
+  display: flex;
+  justify-content: center;
+  margin-top: 8rem;
+}

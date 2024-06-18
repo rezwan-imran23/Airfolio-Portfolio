@@ -13,11 +13,10 @@ html {
     scroll-behavior: smooth;
   }
 
-body{
-    
-  
-}
-
+  /* main{
+    max-width: 1140px;
+    margin: 0 auto;
+} */
 p {
     line-height: 130%;
   }
@@ -38,30 +37,32 @@ a {
   /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
     max-width: 1420px;
-    margin-inline: 1.5rem;
+    margin: 0 auto;
   }
 
   /*=============== HEADER & NAV ===============*/
 
   .header{
-    position: fixed;
+    /* position: fixed; */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px;
     width: 100%;
     top: 0;
     left: 0;
+    height: 100px;
     background-color:white;
     z-index:100;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px;
   }
 
   .nav{
-    position: relative;
-    height: auto;
+    /* position: relative; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin: 0 auto;
   }
 
-  .nav_menu,.nav_list{
+  .nav_list{
     display: flex;
-    justify-content: space-between;
     align-items: center;
   }
 
@@ -73,8 +74,6 @@ a {
   .nav_list a{
     height: 100%;
     padding: 0 10px;
-    display: flex;
-    align-items: center;
   }
 
 
@@ -89,15 +88,85 @@ a {
   }
 
   .nav_btn:hover{
-    background-color: #057f77;
+    background-color: #027870;
     color: white;
     transition: all 0.5s;
   }
 
-  /* Navigation for mobile */
 
- 
-  /* For large devices */
+
+
+.hero-section{
+  background-color: #F6F8FF;
+  background-image: url(images/Vector.png);
+  background-repeat: no-repeat;
+  background-position: 81% 70%;
+}
+
+.hire-btn{
+  border-radius: 5px;
+  background: #078D84;
+  border:0;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 16px 24px;
+  color: white;
+  margin-right: 10px;
+}
+
+.hire-btn:hover{
+  background-color: #027870;
+  color: white;
+  transition: all 0.5s;
+}
+
+
+#portfolio-btn{
+  border-radius: 5px;
+    background-color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 15px 30px;
+    color: #078D84;
+    border: 1px solid #078D84;
+    cursor: pointer;
+}
+
+#portfolio-btn:hover{
+  background-color:#027870;
+  color: #ffffff;
+  border: none;
+  transition: all 0.6s;
+}
+
+.hero{
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  padding-top: 130px;
+}
+
+.hero-content{
+  max-width: 50%;
+
+}
+.hero-img{
+margin-right: 100px;
+}
+.hero-content h1{
+  font-size: 56px;
+  font-weight: 500;
+  line-height: 60px;
+}
+
+.hero-content p{
+  font-size: 18px;
+}
+
+.hero-content p,h1{
+  margin-bottom: 25px;
+}
+  
 
 
 
@@ -131,7 +200,7 @@ a {
     <!--==================== HEADER ====================-->
     <header class="header">
         <nav class="nav container">
-            <div class="nav_menu">
+            
                 <ul class="nav_list">
                     <a href="#" class="nav_logo"><img src="images/Logo/Frame 64.png" alt=""></a>
                     <li><a href="#About Us" class="nav_link">About Us</a></li>
@@ -145,19 +214,30 @@ a {
                     <button class="nav_btn"> Hire Me </button>
                 </div>
 
-            </div>
         </nav>
     </header>
     <main>
         <!--==================== MAIN ====================-->
-      <main class="main">
-        <!--==================== HOME ====================-->
+  
+        <!--==================== HERO ====================-->
+       
         <section class="hero-section" id="hero">
+          <div class="hero container">
+            <div class="hero-content">
+                <p>Hi there,My name is Jane Cooper</p>
+                <h1>Showcase Your Work <br> with Airfolio's <br> Creative Solutions</h1>
+                <p>Create stunning portfolios and websites with Airfolio's UI/UX design <br> and Webflow development services.</p>
+                <button class="hire-btn">Hire Me</button>
+                <button class="btn" id="portfolio-btn">Portfolio</button>
+            </div>
 
+            <div class="hero-img">
+                <img src="images/bohemian-man-with-his-arms-crossed 1.png" alt="">
+            </div>
+
+          </div>
         </section>
     </main>
     <footer></footer>
 </body>
 </html>
-
-  
