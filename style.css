@@ -20,9 +20,12 @@
   }
 
 html  {scroll-behavior: smooth;}
-p     {line-height: 130%;color:#3E3E70}
+p     {line-height: 130%;}
 ul    {list-style: none;}
 a     {text-decoration: none;}
+li{
+  list-style: none;
+}
 .main {overflow: hidden;}
 
 .primary-btn{
@@ -51,12 +54,12 @@ a     {text-decoration: none;}
   /*=============== REUSABLE CSS CLASSES ===============*/
 
 
-.section{
+/* .section{
   padding: 6rem;
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 .container {
     max-width: 78%;
     margin: 0 auto;
@@ -70,7 +73,7 @@ a     {text-decoration: none;}
 }
 
 .row-container{
-  gap:4rem;
+  gap:6rem;
 }
 
 .column-container{
@@ -235,6 +238,10 @@ a     {text-decoration: none;}
 
  /*=============== SERVICES CARD ===============*/
 
+ .service-section{
+  background-color: var(--foundation-blue);
+ }
+
  .service-card-container{
   display: flex;
   justify-content:space-between;
@@ -268,4 +275,178 @@ text-align: left;
   display: flex;
   justify-content: center;
   margin-top: 8rem;
+}
+
+
+
+
+ /*=============== ABOUT US ===============*/
+
+.about-inside-box{
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 3rem;
+  align-items: center;
+}
+
+
+.box{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 3px;
+  border-radius: 1rem;
+  padding: 1rem 1rem 0rem 1rem;
+}
+
+h5{
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 1rem;
+}
+
+.about-content h2{
+  font-size: 38px;
+  font-weight: 500;
+  color:#1C1C57;
+}
+
+.about-content p{
+  font-size: 18px;
+  font-weight: 400;
+  color:#1C1C57;
+  margin-bottom: 1.5rem;
+}
+
+.about-inside-box{
+  margin-bottom: 2rem;
+}
+
+.about-section{
+  background-image: url(images/Ellipse\ 106.png),url(images/Ellipse\ 105.png);
+  background-repeat: no-repeat;
+  background-position: 43% 7% , 11% 87% ;
+  height: 100vh;
+  padding: 7rem 0rem;
+}
+
+/*=============== CTA ===============*/
+
+.cta-section{
+  background-color: #1C1C57;
+  background-image: url(images/11.png),url(images/85.png),url(images/86.png),url(images/92.png);
+  background-position: 85% 20% , 22% 87% , 15% 20% , right bottom;
+  background-repeat: no-repeat;
+}
+
+.cta{
+  display: flex;
+  justify-content: center;
+  padding: 13rem 0rem;
+}
+
+.cta-content{
+  text-align: center;
+  color: var(--white);
+  align-items: center;
+}
+
+.cta h1{
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.cta p{
+  color: #fff;
+}
+
+.cta-btn{
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.cta-btn-one{
+  border-radius: 5px;
+  background: #ffffff;
+  border:0;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 16px 24px;
+  color: var(--black);
+  margin-right: 10px;
+}
+
+.cta-btn-two{
+  border-radius: 5px;
+  background-color:transparent;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 15px 30px;
+  color:var(--white);
+  border: 1px solid #ffffff;
+  cursor: pointer;
+}
+
+
+/*=============== FOOTER ===============*/
+
+
+.footer-section{
+  background-color:var(--dark);
+  color: var(--white);
+  padding: 14rem 0rem;
+}
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-title{
+  
+}
+
+.submit-btn{
+  border-radius: 5px;
+  background-color:transparent;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 15px 30px;
+  color:var(--white);
+  border: 1px solid #ffffff;
+  cursor: pointer;
+}
+.footer-column1{
+  width: 35%;
+}
+
+.footer-column-rest h5{
+  font-size: 18px;
+  font-weight:500;
+}
+
+.footer-column-rest li{
+  font-size: 14px;
+  font-weight:300;
+  margin-bottom: 1.4rem;
+}
+
+.footer-logo{
+  margin-bottom: 1.5rem;
+}
+
+.contact input[type="email"]{
+  padding: 18px 25px;
+  border-radius: 5px;
+  width: 70%;
+  background-color:transparent;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 15px 30px;
+  color:var(--white);
+  border: 1px solid #ffffff;
+  margin: 2rem 0rem 1rem 0rem;
+}
+
+.contact h6{
+  font-weight: 300;
+  font-size: 14px;
 }
