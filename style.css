@@ -454,7 +454,7 @@ i{
 }
 
 .devider{
-  background-color: #ffffff;
+  background-color:var(--foundation-blue);
   height: .01rem;
 }
 
