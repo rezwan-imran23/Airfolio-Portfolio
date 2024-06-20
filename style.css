@@ -540,15 +540,11 @@ i{
     }
   
 
-.swiper-btn{
-  color: rgb(255, 94, 0);
-}
-
 .slide-content{
   padding: 0rem 22rem;
 }
 
-.slide-content img{
+#owner{
   width: 12%;
   border-radius: 60px;
 }
@@ -557,11 +553,30 @@ i{
   display: flex;
   align-items: center;
   text-align: left;
-  justify-content: center;
+  justify-content:center;
+  gap: 1rem;
+}
+
+.brand-owner h5{
+  font-size: 16px;
+  font-weight:500;
+  margin-bottom: 5px;
+}
+.brand-owner p{
+  font-size: 16px;
+  font-weight:300
+}
+
+#test{
+  padding: 2rem 2rem;
 }
 
 .divider{
   border-left: 2px solid #3E3E70;
   height: 100px;
   margin: 0rem 2rem;
+}
+
+.brand-owner img{
+  width: 20%;
 }
