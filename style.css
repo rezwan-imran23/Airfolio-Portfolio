@@ -66,7 +66,7 @@ li{
     padding: 0 2rem;
   }
 
-.row-container,.column-container{
+.row-container{
   display: flex;
   justify-content:space-between;
   align-items: center;
@@ -76,11 +76,6 @@ li{
   gap:6rem;
 }
 
-.column-container{
-  flex-direction: column;
-  gap: 3rem;
-  text-align: center;
-}
 
 
   /*=============== HEADER & NAV ===============*/
@@ -110,6 +105,10 @@ li{
   font-size: 30px;
 }
 .hamburger{
+  display: none;
+}
+
+.second-logo{
   display: none;
 }
 
@@ -161,16 +160,16 @@ li{
 
 .hero{
   display: flex;
-  /* align-items: center; */
-  /* justify-content:space-between; */
+  align-items: center;
+  justify-content:space-between;
   padding-top: 130px;
+ 
 }
 
 .hero-content{
   max-width: 50%;
 }
 .hero-img{
-  /* background-color: #3E3E70; */
   margin-left: 15rem;
 /* display: flex; */
 }
@@ -579,4 +578,77 @@ i{
 
 .brand-owner img{
   width: 20%;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 580px) {
+
+  body{
+    overflow-x: hidden;
+  }
+  
+    .nav_list{
+      background-color: white;
+      position: absolute;
+      flex-direction: column;
+      top: 10%;
+      right: 0;
+      padding: 2rem 4rem;
+      transform: translateX(100%);
+      transition:transform 1 ease-in-out;
+    }
+
+    .nav_list-active{
+      transform: translateX(-20%);
+    }
+
+    .nav_right{
+      display: none;
+    }
+    .hamburger{
+      display: block;
+    }
+
+    .second-logo{
+      display: block;
+    }
+
+   .navbar{
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    .container{
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 0 3rem;
+    }
+
+    /* .row-container{
+      max-width: 100%;
+      padding: 0 0;
+    } */
+
+    .hero-content{
+      max-width: 100%;
+    }
+
+    .hero-content h1{
+      font-size: 40px;
+      font-weight: 500;
+     
+    }
+
+
+   /* .hero-content{
+    text-align: center;
+   } */
+  
 }
